@@ -1,0 +1,748 @@
+ /*
+################
+  Specificy
+################
+*/
+body {
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Cardo', serif;
+}
+.text-center {
+  text-align: center;
+}
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 65px;
+}
+h5 {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #2d3033;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+h4 {
+  font-size: 22px;
+  font-family: 'Raleway', sans-serif;
+  color: #2d3033;
+}
+h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+}
+p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  color: #6c7279;
+}
+.no-gutter [class*=col-] {
+  padding-left: 0;
+  padding-right: 0;
+}
+.animated {
+  visibility: visible; }
+
+
+
+
+/*
+################
+ Banner
+################
+*/
+.fixed {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  background-color: #292c47;
+}
+#header.fixed .main-header {
+  border-bottom: 0;
+  padding: 20px 0
+}
+#header .main-header {
+  transition: padding 0.3s;
+}
+.banner {
+  background: url("../img/banner.jpg") no-repeat center top / cover;
+  min-height: 750px;
+}
+.main-header {
+  display: flex;
+  padding: 40px 0 40px;
+  border-bottom: 1px solid #50546a;
+}
+.menu {
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.menu__item {
+  list-style-type: none;
+}
+.menu__link {
+  font-size: 13px;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  color: #cacbd1;
+  text-transform: uppercase;
+}
+.menu__link:hover {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.5s ease
+}
+
+.toggle {
+  float: right;
+  display: none;
+}
+.toggle i {
+  color: #fff;
+  background-color: #e84545;
+  padding: 10px 12px;
+  border-radius: 50%;
+  font-size: 20px
+
+}
+.banner__text {
+  margin-top: 15%;
+}
+.banner__text p {
+  color: #fff;
+  text-align: center;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-bottom: 70px;
+}
+.btn {
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  width: 200px;
+  padding: 16px 0;
+  background: #e84545;
+  border-radius: 2px;
+  display: block;
+  margin: 0 auto;
+  outline: none !important;
+  border: none;
+}
+.btn:hover {
+  background: #c52d2d;
+  transition: all 0.4s ease;
+  color: #fff;
+}
+
+/*
+################
+  Features
+################
+*/
+.features {
+  padding: 100px 0 60px;
+}
+.feature {
+  margin-bottom: 50px;
+}
+.features__content {
+  padding: 0 15px;
+  margin-top: 30px;
+}
+.icon {
+  font-size: 60px;
+  color: #e84545;
+}
+
+/*
+################
+  Works
+################
+*/
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.overlay {
+  background: #de4948;
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  transition: opacity, 0.3s;
+  opacity: 0;
+}
+.overlay:hover {
+  opacity: 0.9
+}
+.overlay-caption {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+.overlay-caption h5, .overlay-caption p {
+  color: #fff;
+  margin: 0;
+
+}
+.work {
+  -moz-box-shadow: 0 0 0 1px #fff;
+  -webkit-box-shadow: 0 0 0 1px #fff;
+  box-shadow: 0 0 0 1px #fff;
+  min-height: 350px;
+  overflow: hidden;
+  position: relative;
+
+}
+.work h5, .work p, .work img {
+  transition: all, 0.5s;
+}
+.overlay-caption h5 {
+  transform: translate3d(0, -200%, 0);
+  margin-bottom: 5px;
+}
+.overlay-caption p {
+  transform: translate3d(0, 200%, 0);
+}
+.work-box:hover .overlay h5, .work-box:hover .overlay p {
+    transform: translate3d(0, 0, 0);
+}
+.work-box:hover img {
+  transform: scale(1.2);
+}
+a:hover, a:focus {
+  text-decoration: none;
+-moz-transition: background-color, color, 0.3s;
+-o-transition: background-color, color, 0.3s;
+-webkit-transition: background-color, color, 0.3s;
+transition: background-color, color, 0.3s;
+}
+
+
+/*
+################
+  Works
+################
+*/
+.work:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.work:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.work:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.work:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.work:nth-child(5) {
+  animation-delay: 0.8s;
+}
+.work:nth-child(6) {
+  animation-delay: 0.7s;
+}
+.work:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.work:nth-child(8) {
+  animation-delay: 0.5s;
+}
+.teams {
+  margin: 100px 0;
+}
+.img-responsive {
+  margin-bottom: 26px;
+  display: block;
+    max-width: 100%;
+    height: auto;
+}
+.role {
+  color: #e84545;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 400;
+}
+.social-icons {
+  padding: 0;
+}
+.social-icons li {
+  list-style-type: none;
+
+}
+.social-icons a {
+  font-size: 18px;
+  color: #c6cacc;
+  border: 1px solid #c6cacc;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  text-align: center;
+  line-height: 40px;
+  display: block;
+}
+.social-icons a:hover {
+  transition: all 0.3s ease;
+  background-color: #c52d2d;
+  border-color: #c52d2d;
+  color: #fff;
+  border-radius: 2px;
+}
+
+/*
+################
+  Testimonials
+################
+*/
+.testimonials {
+  background: #53354a;
+}
+.flexslider {
+  width: 100%;
+  background: transparent;
+  border: none;
+  margin: 0;
+}
+.flex-control-nav {
+  width: 50%;
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  text-align: center;
+  z-index: 100;
+}
+.flex-control-paging li a {
+  background: #fff;
+  background: rgba(255,255,255, 0.2);
+}
+.flex-control-paging li a:hover {
+  background: #fff;
+}
+.flex-control-paging li a.flex-active {
+  background: #fff;
+  background: rgba(255,255,255, 1);
+
+}
+.flex-direction-nav {
+  display: none;
+}
+.slides li {
+  display: flex !important;
+}
+.slides p {
+  font-size: 36px;
+  font-family: 'Cardo', serif;
+  font-style: italic;
+  color: #fff;
+}
+.author {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+blockquote {
+  width: 65%;
+  margin: auto;
+
+}
+/*
+################
+  Download
+################
+*/
+.download-content {
+  margin: 100px 0;
+}
+.download-content p {
+  text-transform: uppercase;
+  color: #2d3033;
+  font-size: 13px;
+  font-weight: 700;
+}
+.btn-large {
+  width: 280px;
+  margin-top: 30px;
+}
+
+/*
+################
+  Footer
+################
+*/
+footer p {
+  color: #9d9fb2;
+  text-align: center;
+}
+footer h5 {
+  color: #fff;
+}
+.footer-top {
+  background: #3a3e64;
+  padding: 65px 0;
+}
+.footer-top a {
+  border: 2px solid #fff;
+  color: #fff;
+}
+.footer-top a:hover {
+  background-color: #c52d2d;
+  border-color: #c52d2d;
+}
+.footer-bottom {
+  background: #313454;
+  padding: 30px 0;
+}
+.footer-bottom p {
+  color: #808080;
+  margin: 0;
+}
+.footer-bottom i {
+  color: #e84545;
+}
+.footer-bottom a {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+}
+.footer-bottom a:hover {
+  color: #e84545;
+}
+
+
+
+
+
+/* ==========================================================================
+	Font Icon (http://www.elegantthemes.com/blog/freebie-of-the-week/free-line-style-icons)
+========================================================================== */
+@font-face {
+  font-family: "elegant-theme-line";
+  src: url('../fonts/elegant-theme-line.ttf?1439850014') format('truetype'), url('../fonts/elegant-theme-line.eot?1439850014') format('embedded-opentype'), url('../fonts/elegant-theme-line.svg?1439850014') format('svg'), url('../fonts/elegant-theme-line.woff?1439850014') format('woff'); }
+.icon {
+  font-family: 'elegant-theme-line';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-mobile:before {
+  content: "\e000"; }
+
+.icon-laptop:before {
+  content: "\e001"; }
+
+.icon-desktop:before {
+  content: "\e002"; }
+
+.icon-tablet:before {
+  content: "\e003"; }
+
+.icon-phone:before {
+  content: "\e004"; }
+
+.icon-document:before {
+  content: "\e005"; }
+
+.icon-documents:before {
+  content: "\e006"; }
+
+.icon-search:before {
+  content: "\e007"; }
+
+.icon-clipboard:before {
+  content: "\e008"; }
+
+.icon-newspaper:before {
+  content: "\e009"; }
+
+.icon-notebook:before {
+  content: "\e00a"; }
+
+.icon-book-open:before {
+  content: "\e00b"; }
+
+.icon-browser:before {
+  content: "\e00c"; }
+
+.icon-calendar:before {
+  content: "\e00d"; }
+
+.icon-presentation:before {
+  content: "\e00e"; }
+
+.icon-picture:before {
+  content: "\e00f"; }
+
+.icon-pictures:before {
+  content: "\e010"; }
+
+.icon-video:before {
+  content: "\e011"; }
+
+.icon-camera:before {
+  content: "\e012"; }
+
+.icon-printer:before {
+  content: "\e013"; }
+
+.icon-toolbox:before {
+  content: "\e014"; }
+
+.icon-briefcase:before {
+  content: "\e015"; }
+
+.icon-wallet:before {
+  content: "\e016"; }
+
+.icon-gift:before {
+  content: "\e017"; }
+
+.icon-bargraph:before {
+  content: "\e018"; }
+
+.icon-grid:before {
+  content: "\e019"; }
+
+.icon-expand:before {
+  content: "\e01a"; }
+
+.icon-focus:before {
+  content: "\e01b"; }
+
+.icon-edit:before {
+  content: "\e01c"; }
+
+.icon-adjustments:before {
+  content: "\e01d"; }
+
+.icon-ribbon:before {
+  content: "\e01e"; }
+
+.icon-hourglass:before {
+  content: "\e01f"; }
+
+.icon-lock:before {
+  content: "\e020"; }
+
+.icon-megaphone:before {
+  content: "\e021"; }
+
+.icon-shield:before {
+  content: "\e022"; }
+
+.icon-trophy:before {
+  content: "\e023"; }
+
+.icon-flag:before {
+  content: "\e024"; }
+
+.icon-map:before {
+  content: "\e025"; }
+
+.icon-puzzle:before {
+  content: "\e026"; }
+
+.icon-basket:before {
+  content: "\e027"; }
+
+.icon-envelope:before {
+  content: "\e028"; }
+
+.icon-streetsign:before {
+  content: "\e029"; }
+
+.icon-telescope:before {
+  content: "\e02a"; }
+
+.icon-gears:before {
+  content: "\e02b"; }
+
+.icon-key:before {
+  content: "\e02c"; }
+
+.icon-paperclip:before {
+  content: "\e02d"; }
+
+.icon-attachment:before {
+  content: "\e02e"; }
+
+.icon-pricetags:before {
+  content: "\e02f"; }
+
+.icon-lightbulb:before {
+  content: "\e030"; }
+
+.icon-layers:before {
+  content: "\e031"; }
+
+.icon-pencil:before {
+  content: "\e032"; }
+
+.icon-tools:before {
+  content: "\e033"; }
+
+.icon-tools-2:before {
+  content: "\e034"; }
+
+.icon-scissors:before {
+  content: "\e035"; }
+
+.icon-paintbrush:before {
+  content: "\e036"; }
+
+.icon-magnifying-glass:before {
+  content: "\e037"; }
+
+.icon-circle-compass:before {
+  content: "\e038"; }
+
+.icon-linegraph:before {
+  content: "\e039"; }
+
+.icon-mic:before {
+  content: "\e03a"; }
+
+.icon-strategy:before {
+  content: "\e03b"; }
+
+.icon-beaker:before {
+  content: "\e03c"; }
+
+.icon-caution:before {
+  content: "\e03d"; }
+
+.icon-recycle:before {
+  content: "\e03e"; }
+
+.icon-anchor:before {
+  content: "\e03f"; }
+
+.icon-profile-male:before {
+  content: "\e040"; }
+
+.icon-profile-female:before {
+  content: "\e041"; }
+
+.icon-bike:before {
+  content: "\e042"; }
+
+.icon-wine:before {
+  content: "\e043"; }
+
+.icon-hotairballoon:before {
+  content: "\e044"; }
+
+.icon-globe:before {
+  content: "\e045"; }
+
+.icon-genius:before {
+  content: "\e046"; }
+
+.icon-map-pin:before {
+  content: "\e047"; }
+
+.icon-dial:before {
+  content: "\e048"; }
+
+.icon-chat:before {
+  content: "\e049"; }
+
+.icon-heart:before {
+  content: "\e04a"; }
+
+.icon-cloud:before {
+  content: "\e04b"; }
+
+.icon-upload:before {
+  content: "\e04c"; }
+
+.icon-download:before {
+  content: "\e04d"; }
+
+.icon-target:before {
+  content: "\e04e"; }
+
+.icon-hazardous:before {
+  content: "\e04f"; }
+
+.icon-piechart:before {
+  content: "\e050"; }
+
+.icon-speedometer:before {
+  content: "\e051"; }
+
+.icon-global:before {
+  content: "\e052"; }
+
+.icon-compass:before {
+  content: "\e053"; }
+
+.icon-lifesaver:before {
+  content: "\e054"; }
+
+.icon-clock:before {
+  content: "\e055"; }
+
+.icon-aperture:before {
+  content: "\e056"; }
+
+.icon-quote:before {
+  content: "\e057"; }
+
+.icon-scope:before {
+  content: "\e058"; }
+
+.icon-alarmclock:before {
+  content: "\e059"; }
+
+.icon-refresh:before {
+  content: "\e05a"; }
+
+.icon-happy:before {
+  content: "\e05b"; }
+
+.icon-sad:before {
+  content: "\e05c"; }
+
+.icon-facebook:before {
+  content: "\e05d"; }
+
+.icon-twitter:before {
+  content: "\e05e"; }
+
+.icon-googleplus:before {
+  content: "\e05f"; }
+
+.icon-rss:before {
+  content: "\e060"; }
+
+.icon-tumblr:before {
+  content: "\e061"; }
+
+.icon-linkedin:before {
+  content: "\e062"; }
+
+.icon-dribbble:before {
+  content: "\e063"; }
